@@ -1,0 +1,16 @@
+{
+    "name": "Lockall plugin",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": ["<all_urls>", "tabs"],
+    "background": {
+        "scripts": ["lockallBackground.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "css": ["lockallStyles.css"],
+          "js": ["jquery-3.3.1.slim.min.js", "jquery.qrcode.min.js", "lockallInpage.js"]
+        }
+    ]
+}
