@@ -1,1 +1,1 @@
-Lockall-Chrome
+Helper component for the Lockall-Windows
